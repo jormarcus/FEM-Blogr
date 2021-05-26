@@ -5,20 +5,20 @@
 }
 
 :root {
-  /* Primary */
+  /*** Primary ***/
   --light-red: hsl(356, 100%, 66%);
   --very-light-red: hsl(355, 100%, 74%);
   --very-dark-blue: hsl(208, 49%, 24%);
-  /* Neutral */
+  /*** Neutral ***/
   --white: hsl(0, 0%, 100%);
   --grayish-blue:  hsl(240, 2%, 79%)
   --very-dark-grayish-blue:  hsl(207, 13%, 34%)
   --very-dark-black-blue:  hsl(240, 10%, 16%);
-  /* Gradient */
+  /*** Gradient ***/
   --very-light-red-grad: hsl(13, 100%, 72%);
   --light-red-grad: hsl(353, 100%, 62%);
 
-  /* primary */
+  /*** primary ***/
   --very-dark-gray-blue: hsl(237, 17%, 21%);
   --very-dark-desaturated-blue: hsl(237, 23%, 32%);
 }
@@ -28,12 +28,14 @@ body {
 }
 
 header {
-  background-image: url('./images/bg-pattern-intro.svg');
-  background-size: cover;
-  background: linear-gradient(to right, var(--very-light-red-grad), var(--light-red-grad));
-  height: 400px;
+  background-size: 170%;
+  background-image: url('./images/bg-pattern-intro.svg'), linear-gradient(90deg, var(--very-light-red-grad), var(--light-red-grad));
+  background-repeat: no-repeat;
+  background-position: 10% 53%;
+  height: 460px;
   border-bottom-left-radius: 50px;
   color: var(--white);
+  font-family: 'Overpass', sans-serif;
 }
 
 .flex-center {
@@ -42,11 +44,33 @@ header {
   align-items: center;
 }
 
+.round-btn {
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+}
+
+.login {
+  background-color: transparent;
+  border: none;
+  color: var(--white);
+  margin-right: 10px;
+  color: var(--grayish-blue);
+  opacity: 0.8;
+}
+
+.white-btn {
+  background-color: var(--white);
+  border: none;
+  color: var(--very-light-red-grad);
+}
+
 .nav-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 50px;
+  padding: 40px 120px;
 }
 
 .nav {
@@ -60,6 +84,8 @@ header {
 .logo {
   color: var(--white);
 }
+
+/*** Dropdown ***/
 
 .dropdown-row  {
   display: flex;
@@ -80,6 +106,9 @@ header {
   background: transparent;
   color: var(--white);
   cursor: pointer;
+  color: var(--grayish-blue);
+  opacity: 0.6;
+  font-weight: 500;
 }
 
 .dropdown img {
@@ -96,6 +125,16 @@ header {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   border-radius: 8px;
+}
+
+.dropbtn {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+
+.dropdown-content a {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
 }
 
 .show { display: block; }
@@ -125,10 +164,31 @@ header {
 }
 
 .landing-header-container {
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.main-header {
+  padding-bottom: 10px;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.sub-header {
+  padding-bottom: 30px;
+  font-weight: 300;
+  color: var(--grayish-blue);
+  opacity: 0.6;
+}
+
+.learn-more-btn {
+  background-color: transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
+  margin-left: 10px;
 }
 
 .attribution {
