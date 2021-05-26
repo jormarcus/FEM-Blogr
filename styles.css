@@ -7,16 +7,16 @@
 :root {
   /* Primary */
   --light-red: hsl(356, 100%, 66%);
-  --light-red: hsl(355, 100%, 74%);
-  --light-red: hsl(208, 49%, 24%);
+  --very-light-red: hsl(355, 100%, 74%);
+  --very-dark-blue: hsl(208, 49%, 24%);
   /* Neutral */
   --white: hsl(0, 0%, 100%);
   --grayish-blue:  hsl(240, 2%, 79%)
   --very-dark-grayish-blue:  hsl(207, 13%, 34%)
   --very-dark-black-blue:  hsl(240, 10%, 16%);
   /* Gradient */
-  --very-light-red: hsl(13, 100%, 72%);
-  --light-red: hsl(353, 100%, 62%);
+  --very-light-red-grad: hsl(13, 100%, 72%);
+  --light-red-grad: hsl(353, 100%, 62%);
 
   /* primary */
   --very-dark-gray-blue: hsl(237, 17%, 21%);
@@ -25,6 +25,15 @@
 
 body {
   font-size: 16px;
+}
+
+header {
+  background-image: url('./images/bg-pattern-intro.svg');
+  background-size: cover;
+  background: linear-gradient(to right, var(--very-light-red-grad), var(--light-red-grad));
+  height: 400px;
+  border-bottom-left-radius: 50px;
+  color: var(--white);
 }
 
 .flex-center {
@@ -48,6 +57,10 @@ body {
   flex-basis: 50%;
 }
 
+.logo {
+  color: var(--white);
+}
+
 .dropdown-row  {
   display: flex;
   justify-content: space-evenly;
@@ -56,24 +69,48 @@ body {
 
 .dropdown {
   position: relative;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.dropdown-row button {
+.dropbtn {
   flex-basis: auto;
+  border: none;
+  background: transparent;
+  color: var(--white);
+  cursor: pointer;
 }
 
-.dropdown-row img {
-  padding-left: 2px;
+.dropdown img {
+  padding-left: 5px;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
+  margin-top: 20px;
+  left: -35px;
   min-width: 160px;
-  background-color: var( --white);
+  background-color: var(--white);
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  border-radius: 8px;
+}
+
+.show { display: block; }
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  border-bottom: 2px solid var(--white);
+}
+
+.dropdown:hover img {
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
 }
 
 .dropdown-content a {
@@ -81,6 +118,17 @@ body {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.landing-header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .attribution {

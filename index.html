@@ -1,147 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
 
-    <title>Frontend Mentor | [Blogr]</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="nav-row">
-          <div class="nav">
-            <h3 class="logo">Blogr</h3>
-              <div class="dropdown-row">
-                <div class="dropdown">
-                  <button class="dropbtn">
-                    Product
-                    <img src="images/icon-arrow-light.svg" alt="down arrow" />
-                    <div class="dropdown-content">
-                      <a href=""></a>
-                      <a href=""></a>
-                      <a href=""></a>
-                    </div>
-                  </button>
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="./images/favicon-32x32.png" />
+
+  <title>Frontend Mentor | [Blogr]</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <script src="/script.js" async></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="nav-row">
+        <div class="nav">
+          <h1 class="logo">Blogr</h1>
+          <div class="dropdown-row">
+            <div class="dropdown">
+              <button class="dropbtn">
+                Product
+                <div class="dropdown-content">
+                  <a href="">Overview</a>
+                  <a href="">Pricing</a>
+                  <a href="">Marketplace</a>
+                  <a href="">Features</a>
+                  <a href="">Integrations</a>
                 </div>
-                 <div class="dropdown">
-                   <button class="dropbtn">
-                     Company
-                     <img src="images/icon-arrow-light.svg" alt="down arrow" />
-                     <div class="dropdown-content">
-                       <a href=""></a>
-                       <a href=""></a>
-                       <a href=""></a>
-                     </div>
-                   </button>
-                </div>
-                 <div class="dropdown">   
-                   <button class="dropbtn">
-                     Connect
-                     <img src="images/icon-arrow-light.svg" alt="down arrow" />
-                     <div class="dropdown-content">
-                       <a href=""></a>
-                       <a href=""></a>
-                       <a href=""></a>
-                     </div>
-                   </button>
-                </div>
-              </div>
-          </div>
-          <div class="login">
-            <button class="login">Login</button>
-            <button class="sign-up">Sign Up</button>
-          </div>
-        </div>
-        <div class="landing-header-container">
-          <h1 class="main-header">A modern Publishing Platform</h1>
-          <div class="sub-header">
-            Grow your audience and build your online brand
-          </div>
-          <div class="header-buttons">
-            <button class="start-btn">Start for Free</button>
-            <button class="learn-more-btn">Learn More</button>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <div main-body>
-      <div class="future-section">
-        <h2>Designed for the future</h2>
-        <div class="future-body">
-          <div class="future-text-container">
-            <div class="future-text-section">
-              <p class="future-text-header">Introducing an extensible editor</p>
-              <p class="future-text">
-                Blogr features an exceedingly intuitive interface which lets you
-                focus on one thing: creating content. The editor supports
-                management of multiple blogs and allows easy manipulation of
-                embeds such as images, videos, and Markdown. Extensibility with
-                plugins and themes provide easy ways to add functionality or
-                change the looks of a blog.
-              </p>
+              </button>
+              <img src="images/icon-arrow-light.svg" alt="down arrow" />
             </div>
-            <div class="future-text-section">
-              <p class="future-text-header">Robust content management</p>
-              <p class="future-text">
-                Flexible content management enables users to easily move through
-                posts. Increase the usability of your blog by adding customized
-                categories, sections, format, or flow. With this functionality,
-                you’re in full control.
-              </p>
+            <div class="dropdown">
+              <button class="dropbtn">
+                Company
+                <div class="dropdown-content">
+                  <a href="">About</a>
+                  <a href="">Team</a>
+                  <a href="">Blog</a>
+                  <a href="">Careers</a>
+                </div>
+              </button>
+              <img src="images/icon-arrow-light.svg" alt="down arrow" />
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">
+                Connect
+                <div class="dropdown-content">
+                  <a href="">Contact</a>
+                  <a href="">Newsletter</a>
+                  <a href="">LinkedIn</a>
+                </div>
+              </button>
+              <img src="images/icon-arrow-light.svg" alt="down arrow" />
             </div>
           </div>
-          <img class="future-img" />
+        </div>
+        <div class="login">
+          <button class="login">Login</button>
+          <button class="sign-up">Sign Up</button>
         </div>
       </div>
-      <div class="infrastructure">
-        <img class="phone" />
-        <div>
-          <h4>State of the Art Infrastructure</h4>
-          <p>
-            With reliability and speed in mind, worldwide data centers provide
-            the backbone for ultra-fast connectivity. This ensures your site
-            will load instantly, no matter where your readers are, keeping your
-            site competitive.
-          </p>
-          >
-        </div>
+    </nav>
+    <div class="landing-header-container">
+      <h1 class="main-header">A modern Publishing Platform</h1>
+      <div class="sub-header">
+        Grow your audience and build your online brand
       </div>
-      <div class="lower-section"> 
-        <div class="future-text-section">
+      <div class="header-buttons">
+        <button class="start-btn">Start for Free</button>
+        <button class="learn-more-btn">Learn More</button>
+      </div>
+    </div>
+  </header>
+  <div main-body>
+    <div class="future-section">
+      <h2>Designed for the future</h2>
+      <div class="future-body">
+        <div class="future-text-container">
+          <div class="future-text-section">
+            <p class="future-text-header">Introducing an extensible editor</p>
+            <p class="future-text">
+              Blogr features an exceedingly intuitive interface which lets you
+              focus on one thing: creating content. The editor supports
+              management of multiple blogs and allows easy manipulation of
+              embeds such as images, videos, and Markdown. Extensibility with
+              plugins and themes provide easy ways to add functionality or
+              change the looks of a blog.
+            </p>
+          </div>
+          <div class="future-text-section">
+            <p class="future-text-header">Robust content management</p>
+            <p class="future-text">
+              Flexible content management enables users to easily move through
+              posts. Increase the usability of your blog by adding customized
+              categories, sections, format, or flow. With this functionality,
+              you’re in full control.
+            </p>
+          </div>
+        </div>
+        <img class="future-img" />
+      </div>
+    </div>
+    <div class="infrastructure">
+      <img class="phone" />
+      <div>
+        <h4>State of the Art Infrastructure</h4>
+        <p>
+          With reliability and speed in mind, worldwide data centers provide
+          the backbone for ultra-fast connectivity. This ensures your site
+          will load instantly, no matter where your readers are, keeping your
+          site competitive.
+        </p>
+        >
+      </div>
+    </div>
+    <div class="lower-section">
+      <div class="future-text-section">
         <p class="lower-text-header">Free, open, simple</p>
         <p class="lower-text">
           Blogr is a free and open source application backed by a large
-    community of helpful developers. It supports features such as code syntax
-    highlighting, RSS feeds, social media integration, third-party commenting
-    tools, and works seamlessly with Google Analytics.
+          community of helpful developers. It supports features such as code
+          syntax
+          highlighting, RSS feeds, social media integration, third-party
+          commenting
+          tools, and works seamlessly with Google Analytics.
         </p>
       </div>
       <div class="future-text-section">
         <p class="lower-text-header">Powerful tooling</p>
         <p class="lower-text">
           Batteries included. We
-    built a simple and straightforward CLI tool that makes customization and
-    deployment a breeze, but capable of producing even the most complicated
-    sites.
+          built a simple and straightforward CLI tool that makes customization
+          and
+          deployment a breeze, but capable of producing even the most
+          complicated
+          sites.
         </p>
       </div>
     </div>
@@ -170,19 +174,21 @@
       </ul>
       <ul class="footer-list"></ul>
     </div>
-           
-           Login Sign Up A modern
+
+    Login Sign Up A modern
     publishing platform More Designed for the future Introducing an extensible
     editor Robust content management State of the Art Infrastructure Free, open,
-    simple  The architecture is clean
-    and is relatively easy to learn.   Product Overview Pricing Marketplace Features Integrations Company
+    simple The architecture is clean
+    and is relatively easy to learn. Product Overview Pricing Marketplace
+    Features Integrations Company
     About Team Blog Careers Connect Contact Newsletter LinkedIn
 
     <div class="attribution">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      <a href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name
+        Here</a>.
     </div>
-  </body>
+</body>
+
 </html>
