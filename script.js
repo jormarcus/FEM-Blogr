@@ -1,7 +1,8 @@
 document.querySelectorAll('.dropbtn').forEach((el) => {
-  el.addEventListener('click', (event) =>
-    el.firstElementChild.classList.toggle('show')
-  );
+  el.addEventListener('click', (event) => {
+    el.firstElementChild.classList.toggle('show');
+    el.style.opacity = 1;
+  });
 });
 
 window.onclick = (event) => {

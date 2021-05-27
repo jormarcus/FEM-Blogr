@@ -11,9 +11,9 @@
   --very-dark-blue: hsl(208, 49%, 24%);
   /*** Neutral ***/
   --white: hsl(0, 0%, 100%);
-  --grayish-blue:  hsl(240, 2%, 79%)
-  --very-dark-grayish-blue:  hsl(207, 13%, 34%)
-  --very-dark-black-blue:  hsl(240, 10%, 16%);
+  --grayish-blue: hsl(240, 2%, 79%);
+  --very-dark-grayish-blue: hsl(207, 13%, 34%);
+  --very-dark-black-blue: hsl(240, 10%, 16%);
   /*** Gradient ***/
   --very-light-red-grad: hsl(13, 100%, 72%);
   --light-red-grad: hsl(353, 100%, 62%);
@@ -29,7 +29,8 @@ body {
 
 header {
   background-size: 170%;
-  background-image: url('./images/bg-pattern-intro.svg'), linear-gradient(90deg, var(--very-light-red-grad), var(--light-red-grad));
+  background-image: url('./images/bg-pattern-intro.svg'),
+    linear-gradient(90deg, var(--very-light-red-grad), var(--light-red-grad));
   background-repeat: no-repeat;
   background-position: 10% 53%;
   height: 460px;
@@ -87,7 +88,7 @@ header {
 
 /*** Dropdown ***/
 
-.dropdown-row  {
+.dropdown-row {
   display: flex;
   justify-content: space-evenly;
   flex-basis: 75%;
@@ -104,11 +105,11 @@ header {
   flex-basis: auto;
   border: none;
   background: transparent;
-  color: var(--white);
   cursor: pointer;
   color: var(--grayish-blue);
   opacity: 0.6;
   font-weight: 500;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .dropdown img {
@@ -122,14 +123,10 @@ header {
   left: -35px;
   min-width: 160px;
   background-color: var(--white);
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   border-radius: 8px;
-}
-
-.dropbtn {
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 500;
+  color: var(--white);
 }
 
 .dropdown-content a {
@@ -137,7 +134,11 @@ header {
   font-weight: 500;
 }
 
-.show { display: block; }
+.show {
+  display: block;
+  opacity: 1;
+  color: var(--white);
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -164,11 +165,11 @@ header {
 }
 
 .landing-header-container {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-header {
@@ -189,6 +190,64 @@ header {
   border: 1px solid var(--white);
   color: var(--white);
   margin-left: 10px;
+}
+
+.future-section h2 {
+  text-align: center;
+  margin-top: 120px;
+  color: var(--very-dark-blue);
+  font-family: 'Overpass', sans-serif;
+}
+
+.future-section {
+  font-family: 'Overpass', sans-serif;
+}
+
+.future-body {
+  display: flex;
+}
+
+.text-container {
+  flex-basis: 50%;
+  margin-top: 100px;
+  padding-left: 120px;
+}
+
+.future-img-container {
+  flex-basis: 50%;
+  width: 50%;
+}
+
+.text-section {
+  margin: 20px;
+  line-height: 2;
+}
+
+.text-header {
+  font-size: 20px;
+  color: var(--very-dark-blue);
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+.text {
+  font-weight: 300;
+  color: var(--very-dark-grayish-blue);
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.illustration-desktop-img {
+  transform: translate(6%, -10%);
+  max-height: 100%;
+}
+
+.illustration-mobile-img {
+  display: none;
+}
+
+.infrastructure {
+  margin-top: 100px;
 }
 
 .attribution {
