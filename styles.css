@@ -230,6 +230,7 @@ header {
 .future-img-container {
   flex-basis: 50%;
   width: 50%;
+  overflow: hidden;
 }
 
 .text-section {
@@ -261,7 +262,32 @@ header {
 }
 
 .infrastructure {
-  margin-top: 100px;
+  background-image: url('images/bg-pattern-circles.svg');
+  background-color: var(--very-dark-gray-blue);
+  background-repeat: no-repeat;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  max-height: 360px;
+  border-radius: 0 50px 0 50px;
+  background-size: 1000px;
+  background-position-x: -180px;
+  background-position-y: -450px;
+}
+
+.infrastructure-phone-img {
+  margin-left: 100px;
+  margin-top: 90px;
+}
+
+.infrastructure-text {
+  flex-basis: 50%;
+}
+
+.infrastructure-text h2 {
+}
+
+.infrastructure-text p {
 }
 
 .attribution {
