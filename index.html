@@ -3,15 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
     <title>Frontend Mentor | [Blogr]</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -25,7 +22,6 @@
     />
     <script src="/script.js" async></script>
   </head>
-
   <body>
     <header>
       <nav>
@@ -90,7 +86,7 @@
     </header>
     <section class="future-section">
       <h2>Designed for the future</h2>
-      <div class="future-body">
+      <div class="text-section-body">
         <div class="text-container">
           <div class="text-section">
             <p class="text-header">Introducing an extensible editor</p>
@@ -113,18 +109,7 @@
             </p>
           </div>
         </div>
-        <div class="future-img-container">
-          <img
-            src="images/illustration-editor-desktop.svg"
-            alt="editor desktop illustration"
-            class="illustration-desktop-img"
-          />
-          <img
-            src="images/illustration-editor-mobile.svg"
-            alt="editor mobile illustration"
-            class="illustration-mobile-img"
-          />
-        </div>
+        <div class="img-container future-img"></div>
       </div>
     </section>
     <section class="infrastructure">
@@ -144,28 +129,35 @@
       </div>
     </section>
     <section class="lower-section">
-      <div class="text-section">
-        <p class="text-header">Free, open, simple</p>
-        <p class="text">
-          Blogr is a free and open source application backed by a large
-          community of helpful developers. It supports features such as code
-          syntax highlighting, RSS feeds, social media integration, third-party
-          commenting tools, and works seamlessly with Google Analytics.
-        </p>
-      </div>
-      <div class="text-section">
-        <p class="text-header">Powerful tooling</p>
-        <p class="text">
-          Batteries included. We built a simple and straightforward CLI tool
-          that makes customization and deployment a breeze, but capable of
-          producing even the most complicated sites.
-        </p>
+      <div class="text-section-body">
+        <div class="img-container lower-img"></div>
+        <div class="lower-text-container">
+          <div class="text-section">
+            <p class="text-header">Free, open, simple</p>
+            <p class="text">
+              Blogr is a free and open source application backed by a large
+              community of helpful developers. It supports features such as code
+              syntax highlighting, RSS feeds, social media integration,
+              third-party commenting tools, and works seamlessly with Google
+              Analytics.
+            </p>
+          </div>
+          <div class="text-section">
+            <p class="text-header">Powerful tooling</p>
+            <p class="text">
+              Batteries included. We built a simple and straightforward CLI tool
+              that makes customization and deployment a breeze, but capable of
+              producing even the most complicated sites.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
     <footer class="footer">
-      <h2>Blogr</h2>
+      <img class="logo" src="images/logo.svg" alt="BLOGR logo" />
+      <!-- <div class="footer-content"> -->
       <ul class="footer-list">
-        <li>Product</li>
+        <li class="footer-title">Product</li>
         <li>Overview</li>
         <li>Pricing</li>
         <li>Marketplace</li>
@@ -173,25 +165,25 @@
         <li>Integrations</li>
       </ul>
       <ul class="footer-list">
-        <li>Company</li>
+        <li class="footer-title">Company</li>
         <li>About</li>
         <li>Team</li>
         <li>Blog</li>
         <li>Careers</li>
       </ul>
       <ul class="footer-list">
-        <li>Connect</li>
+        <li class="footer-title">Connect</li>
         <li>Contact</li>
         <li>Newsletter</li>
         <li>LinkedIn</li>
       </ul>
-      <ul class="footer-list"></ul>
+      <!-- </div> -->
     </footer>
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Jordan Marcus</a>.
     </div>
   </body>
 </html>
